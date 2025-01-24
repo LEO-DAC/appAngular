@@ -1,14 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Usuario } from '../shared/interfaces/user.interface';
 
 @Component({
   selector: 'app-user',
   imports: [],
-  template: `<div>componente usuario</div>`,
-  styles: `
-      div {
-         color: red;  
-      }`
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.css'
 })
 export class UserComponent {
-
+  user = input.required<Usuario>();
 }

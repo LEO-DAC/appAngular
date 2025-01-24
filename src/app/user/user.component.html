@@ -1,0 +1,22 @@
+<div [class]=" user().hipertenso ? 'user-item hipertenso' : 'user-item'">
+    <div class="row">
+
+        <div class="col-md-12 ">
+            <img [src]="user().img" height="200px">
+        </div>
+        <div class="col-md-12 ">
+            <div class="user()-name"> {{user().nombre+ " "+ user().apellido}}</div>
+        </div>
+        <div class="col-md-12">
+            <div>edad: {{user().edad}}</div>
+        </div>
+        <div class="col-md-12">
+            <div>peso: {{user().peso}} kg</div>
+        </div>
+        <div class="col-md-12" >
+            <div>hipertenso: {{user().hipertenso ? 'si' :'no'}}</div>
+        </div>
+    </div>
+
+</div>  
+

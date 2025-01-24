@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UserComponent } from "./user/user.component";
+import { UserListComponent } from './components/user-list/user-list.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserComponent],
-  template: `<h1>hola {{ title }} !!<h2>
-              <button (click)="setStatus()" >iniciar sesion</button>
-              
-              <app-user>
+  imports: [UserListComponent, ],
+  template: `
+            
+            <app-user-list/>
+         
 
               `
               ,
