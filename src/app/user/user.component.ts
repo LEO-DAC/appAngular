@@ -1,5 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Usuario } from '../shared/interfaces/user.interface';
+import { userChange } from '../shared/interfaces/user-change.interface';
 
 @Component({
   selector: 'app-user',
@@ -9,4 +10,5 @@ import { Usuario } from '../shared/interfaces/user.interface';
 })
 export class UserComponent {
   user = input.required<Usuario>();
+  userChange = output<userChange>();
 }

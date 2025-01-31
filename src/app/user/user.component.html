@@ -5,7 +5,9 @@
             <img [src]="user().img" height="200px">
         </div>
         <div class="col-md-12 ">
-            <div class="user()-name"> {{user().nombre+ " "+ user().apellido}}</div>
+            <div class="user-name"> {{user().nombre+ " "+ user().apellido}}
+               @if(user().hipertenso){⚠️}@else{✅}
+            </div>
         </div>
         <div class="col-md-12">
             <div>edad: {{user().edad}}</div>

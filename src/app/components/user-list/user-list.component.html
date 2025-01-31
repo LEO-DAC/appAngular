@@ -1,5 +1,8 @@
 <div class="user-list">
-   <app-user [user]="usuarios[0]" />
-   <app-user [user]="usuarios[1]"/>
-   <app-user [user]="usuarios[2]"/>
+   @for(usuario of usuarios; track usuario.id){
+      <app-user [user]="usuario" />
+   }@empty {
+      <h1>no hay suarios</h1>
+   }
+   
 </div>
