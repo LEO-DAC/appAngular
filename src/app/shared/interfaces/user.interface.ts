@@ -2,8 +2,10 @@ export interface Usuario {
     nombre: string;
     apellido: string;
     img: string;
+    sexo: string;
     edad: number;
     peso: number;
+    altura: number;
     hipertenso: boolean;
     id: number;
 }

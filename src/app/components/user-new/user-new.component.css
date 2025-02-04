@@ -1,0 +1,35 @@
+label{
+    width: 70px;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.formUser{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.row{
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+select{
+    width: 100px;
+    margin-left: 70px;
+}

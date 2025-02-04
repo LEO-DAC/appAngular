@@ -1,0 +1,6 @@
+<app-user-list [usuarios]="usuarios"/>
+           
+<button type="button" (click)="verFormularioRegistro(true)">nuevo registro</button> 
+<button type="button">nuevo usuario</button>
+
+<user-new (add)="newUser($event)"/>

@@ -1,0 +1,97 @@
+<h3> agregar nuevo usuario</h3>
+
+<div class="formUser">
+    <h4 class="error"> {{ message }}</h4>
+    <form [formGroup]="userForm" (ngSubmit)="addUser()">
+        <div class="row">
+            <div class="column">
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text"
+                        formControlName="nombre" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Nombre"
+                    >
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text"
+                        formControlName="apellido" 
+                        id="apellido" 
+                        name="apellido" 
+                        placeholder="Apellido"
+                    >
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="peso">peso</label>
+                    <input formControlName="peso"
+                            type="number" 
+                            id="peso" 
+                            name="peso"   
+                            placeholder="peso">
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="edad">edad</label>
+                    <input  formControlName="edad"
+                            type="number"
+                             id="edad"
+                             name="edad"
+                             placeholder="edad">
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="altura">altura</label>
+                    <input  formControlName="altura"
+                            type="number" 
+                            id="altura" 
+                            name="altura" 
+                            placeholder="altura">
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="sexo">sexo</label>
+                     <select formControlName="sexo"
+                            id="sexo" 
+                            name="sexo" 
+                            placeholder="sexo">
+                        <option value="masculino">masculino</option>
+                        <option value="femenino">femenino</option>   
+                     </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label>hipertension</label>
+                    <select formControlName="hipertenso" name="hipertenso" id="hipertenso">
+                        <option value="true">si</option>
+                        <option value="false">no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-group">
+                    <label for="fotografia">fotografia</label>
+                    <select formGroupName="img" 
+                            name="img" 
+                            id="img">
+                            <option value="/favicon.ico">default</option>
+                            <option value="/LEONARDO.jpg"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="submit">guardar</button>
+        </div>
+    </form>
+</div>

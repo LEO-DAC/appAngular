@@ -1,5 +1,5 @@
 <div class="user-list">
-   @for(usuario of usuarios; track usuario.id){
+   @for(usuario of usuarios(); track usuario.id){
       <app-user [user]="usuario" />
    }@empty {
       <h1>no hay suarios</h1>
